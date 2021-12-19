@@ -6,7 +6,7 @@ import java.io.FileOutputStream;//prosessingからファイルに書き込める
 //うまくいけば，ボタンを押したら「printlnで〇〇を書き込みました」って出てくる
 
 String textScoreData[] = null;//スコアが書き込んであるtextファイルを一行づつ格納する
-
+String  file;
 void setup() {
   size(400, 800);
   String  initFile = dataPath("") + "\\test.txt"; //書き込むtextファイルの置いてあるところ
@@ -20,12 +20,11 @@ void setup() {
   textScoreData=reverse(sort(textScoreData));//textファイルに書き込まれたスコアを大きい順に並び替える
 }
 
-String  file;
+
 void draw() {
 
   background(144);
   for ( int i = 0; i < textScoreData.length; i++ ) {
-  
     fill(0);
     text( String.valueOf(i+1)+"位　"+  textScoreData[i], 20, 10 + i*20 );  //textファイルの行数ごとに画面に表示
   }
