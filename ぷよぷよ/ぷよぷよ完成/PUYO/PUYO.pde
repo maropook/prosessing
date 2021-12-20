@@ -153,8 +153,6 @@ class Puyo {
 
 
   void display() {
-
-
     int max=200;
     int a=1;
     int b=1;
