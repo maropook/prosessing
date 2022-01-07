@@ -37,7 +37,7 @@ void draw() {
   // 音量の数値をコンソールに出力してみる
 
   // 音量を円のサイズに反映して描く
-  float sz = a * 1000;
+  float sz = a * 300;
   int on = int(sz);
     println(on);
     
@@ -50,46 +50,8 @@ void draw() {
 
 
 
-  ellipse(
-    width / 2, height / 2,
-    sz, sz
-  );
+  //ellipse(
+  //  width / 2, height / 2,
+  //  sz, sz
+  //);
 }
-
-//import ddf.minim.*;
-//PImage[] data = new PImage[39];
-//Minim minim;
-//AudioInput in;
-//float volumeIn;
-//float vs;
-//int on;
-//void setup() {
-//  for (int i = 0; i<38; i++) {
-//    if (i<10) {
-//      data[i] = loadImage(i+".jpg");
-//    } else {
-//      data[i] = loadImage("000"+i+".jpg");
-//    }
-//  }
-//  size(800, 800);
-//  minim = new Minim(this); //Minim生成
-//  in = minim.getLineIn(Minim.MONO, 512);
-//  fill(200, 0, 0);
-//}
-
-
-//void draw() {
-//  print(in+"¥n");
-//  background(0);
-//  volumeIn = map(in.left.level(), 0, 0.5, 0, 10.5) + map (in.right.level(), 0, 0.5, 0, 10.5);
-//  vs = (volumeIn + vs)/2;
-//  on = int(vs);
-//  image(data[on], 0, 0);
-//  print(on);
-//}
-
-//void stop() {
-//  in.close();
-//  minim.stop();
-//  super.stop();
-//}
