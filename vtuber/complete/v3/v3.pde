@@ -120,6 +120,7 @@ void setup() {
  
 void draw() {
   
+
   
   //目の処理
   eyeAnimation();
@@ -129,8 +130,7 @@ void draw() {
   
   background(255,205,147);
   
-  //尻尾の処理
-  tailAnimation();
+
   image(rightFoot,0,0,SCREEN_SIZE,SCREEN_SIZE);
   image(leftFoot,0,0,SCREEN_SIZE,SCREEN_SIZE);
   
@@ -139,6 +139,9 @@ void draw() {
   
   //顔の処理
   faseAnimation();
+  
+    //尻尾の処理
+  tailAnimation();
   
   
   
